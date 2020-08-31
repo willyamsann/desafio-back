@@ -3,7 +3,7 @@
  Proposto por: Accenture
  Autor: Willyam Santos
  
- # Frontend
+ # Back-End
  
  # Desafio
 
@@ -18,15 +18,34 @@ conter apenas as funcionalidades abaixo:
 
 - VS Code
 - PostMan
+- PostMan
+- MySQL WorkBeach
 
 # Desenvolvimento
 
-- React JS
--
-# Depedencias React
+- SpringBoot 2.3.3
+- Maven - Gerenciador
+- MySQL
+- Docker
+- Lombok
 
-- Axios
-- FontAwesome
-- FlipMove
 
-# Fotos
+# Depedencias Spring
+
+- Web
+- JPA
+- MySQL
+- JBDC
+- Hibernate
+- Lombok
+
+# Tabela Mysql
+CREATE TABLE `chaves`.`lista` (
+ `id` INT NOT NULL,
+ `name` VARCHAR(255) NULL,
+ `status` VARCHAR(255) NULL,
+ PRIMARY KEY (`id`));
+
+ ALTER TABLE `chaves`.`lista`
+ CHANGE COLUMN `id` `id` INT(11) NOT NULL AUTO_INCREMENT ,
+ ADD UNIQUE INDEX `id_UNIQUE` (`id` ASC);
